@@ -1,9 +1,10 @@
 <script setup lang="ts">
-import { toggleDark } from "../index.js"
+import { useDark, useToggle } from "@vueuse/core";
+const isDark = useDark();
+const toggleDark = useToggle(isDark)
 </script>
 <template>
-    <button class="my-auto" @click="toggleDark">
-        <Icon name="uil:sun" mode="svg" size="2em" />
-        <!-- <Icon name="uil:moon" style="color: black" mode="svg" size="2em" /> -->
+    <button class="my-auto" @click="toggleDark()">
+        <Icon :name="isDark ? 'uil:sun' : 'uil:moon'" mode="svg" size="2em" />
     </button>
 </template>

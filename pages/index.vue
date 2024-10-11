@@ -1,3 +1,5 @@
+<script setup lang="ts">
+</script>
 <template>
     <div class="h-full flex justify-center items-center">
         <div class="w-full  mx-5" id="about-page">
