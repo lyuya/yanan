@@ -17,6 +17,5 @@ export default defineNuxtConfig({
       script: [{ children: "localStorage.getItem('vueuse-color-scheme') && document.getElementsByTagName('html')[0].setAttribute( 'class', localStorage.getItem('vueuse-color-scheme'))" }],
     },
   },
-
   modules: ['@nuxt/icon'],
 })

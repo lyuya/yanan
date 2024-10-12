@@ -1,8 +1,9 @@
 <script setup lang="ts">
 </script>
 <template>
-    <div class="h-full flex justify-center items-center">
-        <div class="w-full  mx-5" id="about-page">
+    <div class="min-h-full flex  items-center">
+        <div class="backdrop-blur-sm bg-white/20 backdrop-opacity-80 shadow rounded-xl sm:bg-transparent sm:backdrop-blur-none sm:shadow-none sm:rounded-none sm:items-center p-5 w-full content-center mx-5"
+            id="about-page">
             <header>
                 <h1 class="text-3xl pb-5">Hi, I’m Yanan 👋</h1>
             </header>

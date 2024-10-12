@@ -5,6 +5,7 @@ const toggleDark = useToggle(isDark)
 </script>
 <template>
     <button class="my-auto" @click="toggleDark()">
-        <Icon :name="isDark ? 'mdi:brightness-5' : 'mdi:brightness-4'" mode="svg" size="2em" />
-    </button>
+    <Icon v-if="isDark" name="mdi:brightness-5" mode="svg" size="2em" />
+    <Icon v-else name="mdi:brightness-4" mode="svg" size="2em" />
+</button>
 </template>

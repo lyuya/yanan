@@ -12,20 +12,20 @@ body {
 .dark body {
   background-size: 15px 15px;
   background-image:
-    linear-gradient(to right, red 1px, transparent 1px),
-    linear-gradient(to bottom, red 1px, transparent 1px);
+    linear-gradient(to right, #78ff00 1px, transparent 1px),
+    linear-gradient(to bottom, #78ff00 1px, transparent 1px);
 }
 
+:root.dark {
+  background-color: #10141E;
+}
 
 main#page {
-  height: calc(100% - 100px);
+  min-height: calc(100% - 100px);
+}
+@media (min-width: 640px) {
+  #about-page {
+    min-height: calc(100vh - 74px);
+  }  
 }
 
-.navbar {
-  font-weight: 700;
-  justify-content: space-between;
-
-  div {
-    gap: 30px;
-  }
-}
