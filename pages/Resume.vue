@@ -1,5 +1,9 @@
 <script setup lang="ts">
 import Tags from '~/src/components/Tags.vue';
+const route = useRoute();
+const inactiveStyle = 'opacity-80 hover:opacity-60';
+const activeStyle = 'opacity-100 underline';
+console.log(route.hash)
 </script>
 <template>
     <div class="p-5 text-sm font-sans ">
@@ -18,16 +22,19 @@ import Tags from '~/src/components/Tags.vue';
             </div>
         </section> -->
 
-        <section class="pt-4">
-            <div class="text-xl font-bold pb-5">
-                Working experiences
+        <section id="work" class="p-10">
+            <div class="pb-10">
+                <NuxtLink to="#work" class="text-xl font-bold">
+                    Working experiences
+                </NuxtLink>
             </div>
+
             <div class="grid gap-y-5 divide-y">
                 <div class="grid gap-y-2">
                     <div class="w-full inline-flex justify-between">
                         <div>
                             <div class="font-semibold">Front-end Engineer</div>
-                            <div>2022 – 2024</div>                            
+                            <div>2022 – 2024</div>
 
                         </div>
                         <div class="text-end">
@@ -54,7 +61,7 @@ import Tags from '~/src/components/Tags.vue';
                     <div class="w-full inline-flex justify-between">
                         <div>
                             <div class="font-semibold">Front-end Engineer</div>
-                            <div>June 2020 – Dec 2021</div>                            
+                            <div>June 2020 – Dec 2021</div>
                         </div>
                         <div class="text-end">
                             <div class="font-semibold">Seiitra (Foncia)</div>
@@ -105,8 +112,10 @@ import Tags from '~/src/components/Tags.vue';
 
         </section>
 
-        <section class="pt-4">
-            <div class="text-xl font-bold py-5">Education</div>
+        <section id="education" class="p-10">
+            <div class="pb-10">
+                <NuxtLink to="#education" class="text-xl font-bold">Education</NuxtLink>
+            </div>
             <div class="grid gap-y-5">
                 <div class="grid gap-y-2">
                     <div class="w-full inline-flex justify-between">
@@ -139,37 +148,77 @@ import Tags from '~/src/components/Tags.vue';
             </div>
 
         </section>
-        <section class="pt-4">
-            <div class="text-xl font-bold py-5">Projects</div>
+        <section id="projects" class="p-10">
+            <div class="pb-10">
+                <NuxtLink class="text-xl font-bold" to="#projects">Projects</NuxtLink>
+            </div>
             <div class="grid gap-y-5">
                 <div class="grid gap-y-2">
                     <div class="w-full inline-flex justify-between">
-                        <div>Listy - A task planner web application</div>
-                        <NuxtLink to="https://github.com/lyuya/task-manager">github.com/lyuya/task-manager</NuxtLink>
+                        <NuxtLink to="https://github.com/lyuya/task-manager" class="hover:underline">Listy - A task
+                            planner web application</NuxtLink>
                     </div>
                     <div>
-                        <li>Developed a responsive to-do list app with task creation, editing, and completion tracking.</li>
+                        <li>Developed a responsive to-do list app with task creation, editing, and completion tracking.
+                        </li>
                         <li>Integrated Firebase Authentication for secure sync with Google accounts.</li>
                         <li>Provided a daily task summary and customizable color themes to enhance user experience.</li>
                     </div>
-                </div>                
+                </div>
             </div>
 
         </section>
-        <section class="pt-4">
-            <div class="text-xl font-bold py-5">Skills</div>
+        <section id="skills" class="p-10">
+            <div class="pb-10">
+                <NuxtLink class="text-xl font-bold" to="#skills">Skills</NuxtLink>
+            </div>
             <div class="grid gap-y-2">
                 <div class="grid gap-y-2 sm:inline-flex sm:justify-between">
                     <div class="text-base">Languages: </div>
-                    <Tags :items="['TypeScript', 'JavaScript', 'CSS', 'HTML', 'C#']" />
+                    <Tags :items="['TypeScript', 'JavaScript', 'CSS', 'HTML']" />
                 </div>
                 <div class="grid gap-y-2 sm:inline-flex sm:justify-between">
                     <div class="text-base">Frameworks: </div>
-                    <Tags
-                        :items="['Next JS', 'React', 'Angular', 'Nuxt', 'Vue', 'StencilJS', 'Jest', 'Tailwind CSS']" />
+                    <Tags :items="['Next JS', 'React', 'Angular', 'Nuxt', 'Vue', 'StencilJS', 'Tailwind CSS']" />
+                </div>
+                <div class="grid gap-y-2 sm:inline-flex sm:justify-between">
+                    <div class="text-base">Test: </div>
+                    <Tags :items="['Jest', 'Jasmine', 'Vitest']" />
+                </div>
+                <div class="grid gap-y-2 sm:inline-flex sm:justify-between">
+                    <div class="text-base">Tools: </div>
+                    <Tags :items="['Git', 'VScode', 'WebStorm', 'Figma']" />
                 </div>
             </div>
         </section>
     </div>
-
+    <!-- sidemenu -->
+    <div class="hidden sm:block fixed left-2.5 inset-1/3 w-28">
+        <div class="grid gap-y-2 text-end">
+            <div>
+                <NuxtLink class="rounded p-1 bg-neutral-50 dark:bg-neutral-800 shadow-md"
+                    :class="route.hash === '#work' ? activeStyle : inactiveStyle" to="#work">
+                    Working experiences
+                </NuxtLink>
+            </div>
+            <div>
+                <NuxtLink class="rounded p-1 bg-neutral-50 dark:bg-neutral-800 shadow-md"
+                    :class="route.hash === '#education' ? activeStyle : inactiveStyle" to="#education">
+                    Education
+                </NuxtLink>
+            </div>
+            <div>
+                <NuxtLink class="rounded p-1 bg-neutral-50 dark:bg-neutral-800 shadow-md"
+                    :class="route.hash === '#projects' ? activeStyle : inactiveStyle" to="#projects">
+                    Projects
+                </NuxtLink>
+            </div>
+            <div>
+                <NuxtLink class="rounded p-1 bg-neutral-50 dark:bg-neutral-800 shadow-md"
+                    :class="route.hash === '#skills' ? activeStyle : inactiveStyle" to="#skills">
+                    Skills
+                </NuxtLink>
+            </div>
+        </div>
+    </div>
 </template>
