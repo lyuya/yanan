@@ -8,20 +8,6 @@ console.log(route.hash)
 <template>
     <div class="p-5 text-sm font-sans ">
 
-        <!-- <section class="text-center">
-            <div class="text-3xl font-bold px-2">Yanan LYU</div>
-            <div class="text-xs text-gray-800 dark:text-gray-100 flex flex-wrap divide-x divide-solid divide-gray-400 justify-center">
-                <NuxtLink to="mailto:yanan.lyu6@gmail.com" class="px-2">yanan.lyu6@gmail.com</NuxtLink>
-                <span class="px-2">+33633339502</span>
-                <NuxtLink to="https://www.yananlyu.fr" class="px-2">yanan.dev</NuxtLink>
-                <NuxtLink to="https://www.linkedin.com/in/yanan-lyu6/" class="px-2">linkedin.com/in/yanan-lyu6/</NuxtLink>
-                <NuxtLink to="https://github.com/lyuya" class="px-2">github.com/lyuya/</NuxtLink>
-            </div>
-            <div>
-                <p>Front-end Engineer with 3 years of experience in building responsive, user-friendly interfaces.</p>
-            </div>
-        </section> -->
-
         <section id="work" class="p-10">
             <div class="pb-10">
                 <NuxtLink to="#work" class="text-xl font-bold">
