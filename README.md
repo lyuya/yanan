@@ -1,73 +1,10 @@
-# Nuxt 3 Minimal Starter
+# My personal website
+A small self-presentation.
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+## Stack
+- **Framework:** Vue, NuxtJS, Tailwind
+- **Library:** @vueuse/core, @nuxt/icon
 
-## Setup
+## Screenshot:
 
-Make sure to install the dependencies:
-
-```bash
-# npm
-npm install
-
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
-```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm run dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm run build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
+<img width="1465" alt="Screenshot 2024-10-13 at 03 21 01" src="https://github.com/user-attachments/assets/ac9673b1-2f52-4306-bca7-09152d24f296">
