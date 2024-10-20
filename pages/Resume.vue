@@ -114,8 +114,6 @@ console.log(route.hash)
                             <div>2019 – 2021</div>
                         </div>
                     </div>
-                    <Tags
-                        :items="['Design pattern', 'Human-Machine Interface Engineering', 'Database', 'Eco-design WEB', 'Mobile Development']" />
                 </div>
                 <div class="grid gap-y-2">
                     <div class="w-full inline-flex justify-between">
@@ -128,8 +126,6 @@ console.log(route.hash)
                             <div>2018 – 2019</div>
                         </div>
                     </div>
-                    <Tags
-                        :items="['Systems and networks', 'Object oriented programming', 'Declarative programming', 'Algorithm for model validation']" />
                 </div>
             </div>
 
