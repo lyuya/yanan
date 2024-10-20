@@ -17,7 +17,7 @@ import Tags from '~/src/components/Tags.vue';
                         </div>                        
                     </div>
                     <div class="content-center">
-                        <Tags :items="['NextJS', 'React', 'Tailwind', 'Firebase', 'Vitest']" class="justify-end"></Tags>
+                        <Tags :items="['NextJS', 'React', 'Tailwind', 'Firebase', 'Vitest']" class="sm:justify-end"></Tags>
                     </div>
                 </NuxtLink>
                 <NuxtLink class="grid sm:flex gap-5 rounded-md p-5 dark:hover:bg-transparent hover:bg-neutral-100/50 dark:sm:hover:bg-gray-900/50 sm:justify-between"
@@ -30,7 +30,7 @@ import Tags from '~/src/components/Tags.vue';
                         </div>                        
                     </div>
                     <div class="content-center">
-                        <Tags :items="['Nuxt', 'Vue', 'Tailwind']" class="justify-end"></Tags>
+                        <Tags :items="['Nuxt', 'Vue', 'Tailwind']" class="sm:justify-end"></Tags>
                     </div>
                 </NuxtLink>
                 <NuxtLink class="grid sm:flex gap-5 rounded-md p-5 dark:hover:bg-transparent hover:bg-neutral-100/50 dark:sm:hover:bg-gray-900/50 sm:justify-between"
@@ -43,7 +43,7 @@ import Tags from '~/src/components/Tags.vue';
                         </div>                        
                     </div>
                     <div class="content-center">
-                        <Tags :items="['NextJS', 'Tailwind', 'OpenAI API']" class="justify-end"></Tags>
+                        <Tags :items="['NextJS', 'Tailwind', 'OpenAI API']" class="sm:justify-end"></Tags>
                     </div>
                 </NuxtLink>
             </div>
