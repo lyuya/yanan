@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import CopyrightSection from './src/components/CopyrightSection.vue';
 import NavBar from './src/components/NavBar.vue';
 </script>
 <template class="dark:bg-gray-950/95">
@@ -8,6 +9,7 @@ import NavBar from './src/components/NavBar.vue';
       <main id="page" class="content-center sm:content-none">
         <NuxtPage />
       </main>
+      <CopyrightSection />
     </div>
   </div>
 </template>

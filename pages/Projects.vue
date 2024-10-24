@@ -3,7 +3,7 @@ import Tags from '~/src/components/Tags.vue';
 </script>
 
 <template>
-    <div class="h-full flex">
+    <div class="h-full flex" id="projects-page">
         <div
             class="backdrop-blur-sm bg-white/20 backdrop-opacity-80 shadow rounded-xl sm:bg-transparent sm:backdrop-blur-none sm:shadow-none sm:rounded-none sm:items-center p-5 w-full content-center mx-5">
             <div class="p-5 text-sm space-y-4 ">
