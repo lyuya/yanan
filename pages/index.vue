@@ -5,7 +5,7 @@
         <div class="backdrop-blur-sm bg-white/20 backdrop-opacity-80 shadow rounded-xl sm:bg-transparent sm:backdrop-blur-none sm:shadow-none sm:rounded-none sm:items-center p-5 w-full content-center mx-5"
             id="about-page">
             <header>
-                <h1 class="text-3xl pb-5">Hi, I’m Yanan 👋</h1>
+                <h1 class="text-3xl pb-5">Hi, I’m Yanan <span class="wave">👋</span></h1>
             </header>
             <div class="text-sm py-5">
                 <p>I'm a <b>Front-end Software Engineer</b> with a passion for creating intuitive and dynamic web
