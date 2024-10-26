@@ -1,6 +1,9 @@
 <script setup lang="ts">
 import CopyrightSection from './src/components/CopyrightSection.vue';
 import NavBar from './src/components/NavBar.vue';
+useHead({
+  title: 'Yanan LYU - Software engineer',
+})
 </script>
 <template class="dark:bg-gray-950/95">
   <div class="h-full flex justify-center sm:h-full font-mono dark:text-indigo-50 dark:bg-gray-950/95 min-h-screen	">
