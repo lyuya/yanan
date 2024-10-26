@@ -3,6 +3,9 @@ import CopyrightSection from './src/components/CopyrightSection.vue';
 import NavBar from './src/components/NavBar.vue';
 useHead({
   title: 'Yanan LYU - Software engineer',
+  meta: [
+    { name: 'description', content: 'Yanan LYU - I\'m a Front-end Software Engineer with a passion for creating intuitive and dynamic web experiences.' }
+  ],
 })
 </script>
 <template class="dark:bg-gray-950/95">
