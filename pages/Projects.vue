@@ -8,6 +8,19 @@ import Tags from '~/src/components/Tags.vue';
             class="backdrop-blur-sm bg-white/20 backdrop-opacity-80 shadow rounded-xl sm:bg-transparent sm:backdrop-blur-none sm:shadow-none sm:rounded-none sm:items-center p-5 w-full content-center mx-5">
             <div class="p-5 text-sm space-y-4 ">
                 <NuxtLink class="grid sm:flex gap-5 rounded-md p-5 dark:hover:bg-transparent hover:bg-neutral-100/50 dark:sm:hover:bg-gray-900/50 sm:justify-between"
+                    to="https://secret-santa-lyuya.vercel.app/" target="_blank">
+                    <div class="flex gap-2">
+                        <Icon name="mdi:gift-open-outline" class="my-auto" mode="svg" size="2em"></Icon>
+                        <div>
+                            <div class="text-lg">Secret Santa</div>
+                            <span>An secret santa organizer by sending mails</span>
+                        </div>                        
+                    </div>
+                    <div class="content-center">
+                        <Tags :items="['NextJS', 'React', 'Tailwind', 'MailJet', 'Firebase']" class="sm:justify-end"></Tags>
+                    </div>
+                </NuxtLink>
+                <NuxtLink class="grid sm:flex gap-5 rounded-md p-5 dark:hover:bg-transparent hover:bg-neutral-100/50 dark:sm:hover:bg-gray-900/50 sm:justify-between"
                     to="https://listy-ecru.vercel.app/" target="_blank">
                     <div class="flex gap-2">
                         <Icon name="mdi:list-box-outline" class="my-auto" mode="svg" size="2em"></Icon>
@@ -43,7 +56,7 @@ import Tags from '~/src/components/Tags.vue';
                         </div>                        
                     </div>
                     <div class="content-center">
-                        <Tags :items="['NextJS', 'Tailwind', 'OpenAI API']" class="sm:justify-end"></Tags>
+                        <Tags :items="['NextJS', 'React', 'Tailwind', 'OpenAI API']" class="sm:justify-end"></Tags>
                     </div>
                 </NuxtLink>
             </div>
