@@ -34,19 +34,6 @@ import Tags from '~/src/components/Tags.vue';
                     </div>
                 </NuxtLink>
                 <NuxtLink class="grid sm:flex gap-5 rounded-md p-5 dark:hover:bg-transparent hover:bg-neutral-100/50 dark:sm:hover:bg-gray-900/50 sm:justify-between"
-                    to="https://github.com/lyuya/yanan" target="_blank">
-                    <div class="flex gap-2">
-                        <Icon name="mdi:robot-happy-outline" class="my-auto" mode="svg" size="2em"></Icon>
-                        <div>
-                            <div class="text-lg">yanan.me</div>
-                            <span>My personal website</span>
-                        </div>                        
-                    </div>
-                    <div class="content-center">
-                        <Tags :items="['Nuxt', 'Vue', 'Tailwind']" class="sm:justify-end"></Tags>
-                    </div>
-                </NuxtLink>
-                <NuxtLink class="grid sm:flex gap-5 rounded-md p-5 dark:hover:bg-transparent hover:bg-neutral-100/50 dark:sm:hover:bg-gray-900/50 sm:justify-between"
                     to="https://recipy-weld.vercel.app/" target="_blank">
                     <div class="flex gap-2">
                         <Icon name="mdi:food-outline" class="my-auto" mode="svg" size="2em"></Icon>
@@ -57,6 +44,19 @@ import Tags from '~/src/components/Tags.vue';
                     </div>
                     <div class="content-center">
                         <Tags :items="['NextJS', 'React', 'Tailwind', 'OpenAI API']" class="sm:justify-end"></Tags>
+                    </div>
+                </NuxtLink>
+                <NuxtLink class="grid sm:flex gap-5 rounded-md p-5 dark:hover:bg-transparent hover:bg-neutral-100/50 dark:sm:hover:bg-gray-900/50 sm:justify-between"
+                    to="https://github.com/lyuya/yanan" target="_blank">
+                    <div class="flex gap-2">
+                        <Icon name="mdi:robot-happy-outline" class="my-auto" mode="svg" size="2em"></Icon>
+                        <div>
+                            <div class="text-lg">yanan.me</div>
+                            <span>My personal website</span>
+                        </div>                        
+                    </div>
+                    <div class="content-center">
+                        <Tags :items="['NuxtJS', 'VueJS', 'Tailwind']" class="sm:justify-end"></Tags>
                     </div>
                 </NuxtLink>
             </div>
